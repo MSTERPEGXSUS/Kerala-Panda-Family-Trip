@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kerala Family Holiday</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#faf9f5;color:#263b32}
+nav{background:#123d35;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center}
+nav h2{font-family:Georgia,serif}
+nav a{color:white;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{height:570px;background:linear-gradient(90deg,#092d25c9,#092d2540),url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1800') center/cover;display:flex;align-items:center;padding:8%;color:white}
+.hero h1{font:76px Georgia;margin:15px 0}
+.hero p{font-size:19px;max-width:550px}
+.tag{display:inline-block;border:1px solid white;border-radius:30px;padding:9px 16px;margin:8px 5px 0 0}
+.stats{display:flex;justify-content:space-around;background:white;padding:30px;max-width:1000px;margin:-35px auto 0;position:relative;border-radius:15px;box-shadow:0 8px 30px #0001}
+.stats div{text-align:center}
+.stats strong{display:block;font:30px Georgia;color:#17624e}
+section{padding:75px 8%}
+h2.section{font:44px Georgia;color:#123d35}
+.subtitle{color:#718078;max-width:700px;line-height:1.7}
+.route{background:#f0eee4;text-align:center}
+.route-items{display:flex;justify-content:space-around;flex-wrap:wrap;gap:25px;margin-top:35px}
+.route-items div{font:21px Georgia;color:#17624e}
+.days{background:white}
+.day{border:1px solid #e1e8e1;border-radius:12px;margin:15px 0;overflow:hidden}
+.day button{width:100%;padding:20px;text-align:left;border:0;background:white;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#123d35;font-size:17px}
+.day button:hover{background:#f0f7f2}
+.content{display:none;padding:5px 25px 25px;line-height:1.8;color:#596b60}
+.content.show{display:block}
+.stay{background:#f5f0e4;padding:15px;border-left:4px solid #c99e57;margin-top:15px}
+.hotels{background:#f1f3ed}
+.hotel-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.hotel{background:white;padding:25px;border-radius:12px}
+.hotel h3{font:25px Georgia;color:#17624e}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.card{background:#204c40;color:white;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:200px;object-fit:cover}
+.card div{padding:18px}
+.card h3{font:24px Georgia}
+.details{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.box{background:#f1f3ed;padding:22px;border-radius:12px;line-height:1.8}
+footer{background:#10362e;color:white;text-align:center;padding:35px}
+@media(max-width:700px){
+.hero h1{font-size:53px}
+.hero{height:480px}
+.stats{margin:0 12px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+section{padding:55px 6%}
+h2.section{font-size:35px}
+.hotel-grid,.cards,.details{grid-template-columns:1fr}
+nav{flex-wrap:wrap}
+nav a{margin:5px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<h2>Kerala, Together</h2>
+<div>
+<a href="#journey">Journey</a>
+<a href="#itinerary">Itinerary</a>
+<a href="#hotels">Hotels</a>
+<a href="#details">Details</a>
+</div>
+</nav>
+
+<header class="hero">
+<div>
+<p>✦ A FAMILY JOURNEY THROUGH GOD'S OWN COUNTRY</p>
+<h1>Kerala<br>Family Holiday</h1>
+<p>From misty tea gardens to peaceful backwaters and beautiful beaches. Six days exploring Kerala together.</p>
+<span class="tag">15–20 December 2026</span>
+<span class="tag">10 Adults + 2 Children</span>
+<span class="tag">6 Days · 5 Nights</span>
+</div>
+</header>
+
+<div class="stats">
+<div><strong>6</strong>Days</div>
+<div><strong>5</strong>Nights</div>
+<div><strong>5</strong>Destinations</div>
+<div><strong>12</strong>Travellers</div>
+</div>
+
+<section class="route" id="journey">
+<h2 class="section">Our Kerala Journey</h2>
+<p class="subtitle">A beautiful journey from the hills of Munnar to the beaches of southern Kerala.</p>
+<div class="route-items">
+<div>✈️<br>Kochi</div>
+<div>🌿<br>Munnar</div>
+<div>🚤<br>Alleppey</div>
+<div>🏖️<br>Varkala</div>
+<div>🌊<br>Kovalam</div>
+<div>✈️<br>Trivandrum</div>
+</div>
+</section>
+
+<section class="days" id="itinerary">
+<h2 class="section">The Itinerary</h2>
+<p class="subtitle">Click on each day to explore the plans and activities.</p>
+
+<div class="day">
+<button onclick="toggle(0)">DAY 01 · 15 DECEMBER · KOCHI → MUNNAR <span>＋</span></button>
+<div class="content">
+<p>Arrive at Cochin International Airport at 1:45 PM. Meet the representative and begin the scenic journey towards Munnar.</p>
+<p><b>En route visits:</b></p>
+<ul><li>Cheeyappara Waterfalls</li><li>Valara Waterfalls</li></ul>
+<p>Arrive in Munnar, check into the hotel and relax.</p>
+<div class="stay"><b>Overnight stay:</b> Grand Cliff – Kohinoor Manor</div>
+</div>
+</div>
+
+<div class="day">
+<button onclick="toggle(1)">DAY 02 · 16 DECEMBER · MUNNAR SIGHTSEEING <span>＋</span></button>
+<div class="content">
+<p>After breakfast, enjoy a full day exploring the beautiful hill station of Munnar.</p>
+<ul>
+<li>Mattupetty Dam</li>
+<li>Echo Point</li>
+<li>Kundala Lake</li>
+<li>Tea plantations</li>
+<li>Tea Factory</li>
+<li>Eravikulam National Park (subject to availability)</li>
+</ul>
+<p>Return to the hotel and relax.</p>
+<div class="stay"><b>Overnight stay:</b> Grand Cliff – Kohinoor Manor</div>
+</div>
+</div>
+
+<div class="day">
+<button onclick="toggle(2)">DAY 03 · 17 DECEMBER · MUNNAR → ALLEPPEY <span>＋</span></button>
+<div class="content">
+<p>After breakfast, travel to Alleppey, famous for its beautiful backwaters.</p>
+<p>Board the traditional Kerala houseboat around noon and enjoy a relaxing cruise surrounded by coconut palms, paddy fields and village life.</p>
+<p><b>Meals included onboard:</b></p>
+<ul><li>Lunch</li><li>Evening tea and snacks</li><li>Dinner</li><li>Breakfast</li></ul>
+<div class="stay"><b>Overnight stay:</b> Blue Jelly – Super Luxury Houseboat with Upper Deck<br>4 bedrooms + 3 extra beds + 1 without bed</div>
+</div>
+</div>
+
+<div class="day">
+<button onclick="toggle(3)">DAY 04 · 18 DECEMBER · ALLEPPEY → VARKALA <span>＋</span></button>
+<div class="content">
+<p>After breakfast, check out from the houseboat. One guest will travel separately to Cochin Airport, while the remaining guests continue towards Varkala.</p>
+<p><b>Explore:</b></p>
+<ul><li>Papanasam Beach</li><li>Varkala Cliff</li></ul>
+<p>Check into the hotel and relax.</p>
+<div class="stay"><b>Overnight stay:</b> Gateway Varkala – IHCL SeleQtions<br>Superior Room</div>
+</div>
+</div>
+
+<div class="day">
+<button onclick="toggle(4)">DAY 05 · 19 DECEMBER · VARKALA → KOVALAM <span>＋</span></button>
+<div class="content">
+<p>After breakfast, check out and proceed towards Kovalam.</p>
+<p><b>En route sightseeing:</b></p>
+<ul>
+<li>Sree Padmanabhaswamy Temple</li>
+<li>Puthen Maliga Palace Museum</li>
+<li>Napier Museum</li>
+<li>Poovar Boating</li>
+</ul>
+<p>Continue to Kovalam, check in and enjoy some relaxing beach time.</p>
+<div class="stay"><b>Overnight stay:</b> The Leela Kovalam – Sea View Villa</div>
+</div>
+</div>
+
+<div class="day">
+<button onclick="toggle(5)">DAY 06 · 20 DECEMBER · DEPARTURE <span>＋</span></button>
+<div class="content">
+<p>After breakfast, check out from the hotel.</p>
+<p>Depending on the flight schedule, enjoy some free time for shopping or relaxation before travelling to Trivandrum International Airport.</p>
+<p>End of a wonderful Kerala family holiday!</p>
+</div>
+</div>
+</section>
+
+<section style="background:#123d35;color:white">
+<h2 class="section" style="color:white">Trip Highlights</h2>
+<p class="subtitle" style="color:#d4e1da">Some of the special experiences along the way.</p>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?w=800" alt="Munnar tea gardens">
+<div><h3>Munnar</h3><p>Beautiful tea plantations, lakes and mountain scenery.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1602301411375-0c4d5e1c1b1b?w=800" alt="Kerala houseboat">
+<div><h3>Alleppey</h3><p>A relaxing houseboat experience through Kerala's backwaters.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=800" alt="Tropical beach">
+<div><h3>Kovalam</h3><p>Beautiful coastal views and time to relax by the sea.</p></div>
+</div>
+</div>
+</section>
+
+<section class="hotels" id="hotels">
+<h2 class="section">Where We Stay</h2>
+<p class="subtitle">Five nights across four beautiful properties.</p>
+<div class="hotel-grid">
+<div class="hotel"><h3>Grand Cliff – Kohinoor Manor</h3><p>Munnar · 15 & 16 December · 2 nights</p></div>
+<div class="hotel"><h3>Blue Jelly – Super Luxury</h3><p>Alleppey · 17 December · Houseboat with Upper Deck</p></div>
+<div class="hotel"><h3>Gateway Varkala</h3><p>Varkala · 18 December · IHCL SeleQtions</p></div>
+<div class="hotel"><h3>The Leela Kovalam</h3><p>Kovalam · 19 December · Sea View Villa</p></div>
+</div>
+</section>
+
+<section id="details">
+<h2 class="section">Important Information</h2>
+<div class="details">
+<div class="box">
+<h3>🚐 Transport</h3>
+<ul>
+<li>14-seater air-conditioned Urbania</li>
+<li>Separate Swift Dzire airport transfer for one guest on 18 December</li>
+<li>English-speaking driver</li>
+</ul>
+</div>
+<div class="box">
+<h3>✓ Included</h3>
+<ul>
+<li>Accommodation</li>
+<li>Daily breakfast</li>
+<li>All houseboat meals</li>
+<li>Fuel, parking and toll charges</li>
+<li>Driver allowance and applicable taxes</li>
+</ul>
+</div>
+<div class="box">
+<h3>Not Included</h3>
+<ul>
+<li>Flights and train tickets</li>
+<li>Entrance fees and optional activities</li>
+<li>Extra meals and drinks</li>
+<li>Personal expenses and tips</li>
+</ul>
+</div>
+<div class="box">
+<h3>Travel Reminders</h3>
+<ul>
+<li>Temple entry is subject to timings and dress code.</li>
+<li>National Park visit subject to availability.</li>
+<li>Museums and zoo are closed on Mondays.</li>
+<li>Driver details will be shared one day before arrival.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<footer>
+<h2>Kerala, Together ❤️</h2>
+<p>15–20 December 2026</p>
+<p>A family holiday to remember.</p>
+</footer>
+
+<script>
+function toggle(i){
+const panels=document.querySelectorAll('.content');
+const panel=panels[i];
+panel.classList.toggle('show');
+}
+</script>
+</body>
+</html>
